@@ -1,0 +1,349 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+#aboutPage,#careerPage,#contactPage {
+  background: url("/assets/images/iStock-652946130.jpg");
+  background-size: contain;
+}
+/* Home Styles */
+.homeTopRow {
+  margin: auto;
+}
+
+#hometopImg {
+  width: 400px;
+  height: 600px;
+}
+/* .homeRow-1 {
+  margin: 0 auto 75px;
+  width: 100vw;
+} */
+.nav-link {
+  text-decoration: none;
+  position: relative;
+
+   margin-right: 1rem; /* Adjust the value as needed */
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: transparent; /* Initially transparent */
+  transition:  background-color 0.3s ease; /* Smooth transition */
+}
+.nav-link:hover{
+  color: #007bff;  
+  transition: color .3s ease;
+}
+.nav-link:hover::after {
+  background-color: #007bff; /* Primary color */
+}
+.nav-link.active {
+  color: #007bff !important; /* Set the desired active link color here */
+}
+.custom-shape-divider-bottom-1708098188 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.custom-shape-divider-bottom-1708098188 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.7px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+.custom-shape-divider-bottom-1708098188 .shape-fill {
+  fill: white;
+}
+.custom-shape-divider-top-1707950475 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape-divider-top-1707950475 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+.custom-shape-divider-top-1707950475 .shape-fill {
+  fill: #ffffff;
+}
+.bottomStores {
+  padding: 10px 0;
+}
+.siteLinks {
+  margin: auto;
+}
+/* About Styles */
+#aboutText {
+  margin: auto;
+  width: 70vw;
+  text-align: center;
+}
+/* Locations Styles */
+.map-link-container {
+  margin: 50px 0 50px 10px;
+}
+.map-link-container h6 {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  margin: 0;
+}
+.backBtnDetails {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+.back-button-container:hover .backBtnDetails,
+.back-button-container:hover .back-button-label {
+  color: #00a887; /* or any other color you prefer */
+}
+.map-link-icon {
+  display: inline-block;
+  background-color: #c36;
+  border-radius: 50%;
+  padding: 4px;
+  transition: background-color 0.3s ease;
+}
+.map-link-icon:hover {
+  background-color: #c36;
+}
+#testingContainer {
+  top: unset;
+  width: 30vw;
+  /* height: 80vh; */
+  overflow-y: auto;
+  z-index: 1;
+}
+.map-link {
+  text-decoration-color: #00a887;
+  text-decoration-thickness: 2px;
+  margin-left: 8px;
+  color: #c36;
+  transition: color 0.3s ease;
+}
+.map-link:hover {
+  color: #c36;
+}
+#locations {
+  height: 80vh;
+  display: flex;
+}
+#menuBanner,
+#detailsBanner {
+  background-color: #c36;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.storeBoxes {
+  padding: 10px;
+  transition: background-color 0.5s ease;
+  border-bottom: 2px solid lightgray;
+}
+.storeBoxes:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+#mapCont {
+  height: 80vh;
+  width: 70vw;
+}
+.detailsHead {
+  background-color: lightgray;
+  padding: 10px;
+}
+.detailsHour {
+  display: flex;
+  flex-direction: column;
+}
+.detailsHour h6 {
+  border-bottom: 2px solid black;
+}
+.detailsHour span {
+  font-size: 14px;
+}
+.hours {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  border-bottom: 2px dashed gray;
+  padding: 5px 0;
+}
+.f4lPin {
+  width: 36px;
+  height: 54px;
+  color: #fffd00;
+} /* Component Styles */
+footer {
+  background-color: #f7f8ff;
+}
+.compLogo {
+  width: 100px;
+  height: 50px;
+}
+#specLogo {
+  margin: auto;
+  width: 200px;
+  height: 100px;
+}
+.css-hyum1k-MuiToolbar-root {
+  justify-content: space-between;
+}
+.scrolled {
+  background: white;
+  transition: background-color 0.7s ease;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+header {
+  background-color: white;
+}
+section {
+  /* height: 50vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  scroll-snap-align: center;
+  perspective: 500px;
+}
+section > div {
+  /* aspect-ratio: 2/3; */
+  position: relative;
+  background: var(--white);
+  overflow: hidden;
+}
+#framerSpecIMG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--accent);
+  bottom: 100px;
+}
+p {
+  margin-bottom: 0 !important;
+}
+.boxes {
+  flex: 1;
+  max-width: 50%;
+}
+.flex-column.nav {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1 0 auto;
+  z-index: 2;
+  position: fixed;
+  top: 0px;
+  outline: 0px;
+  left: 0px;
+}
+.backbtn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  background-color: #111;
+  border: none;
+  cursor: pointer;
+}
+.backbtn:hover {
+  color: #f1f1f1;
+}
+.display-none {
+  display: none;
+}
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  text-align: left;
+  width: 100%;
+}
+.contactIcons {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: lightgray;
+  padding: 15px;
+  margin: 10px auto;
+}
+.contactDividers {
+  margin: 0 0 5px;
+  border: solid black 1px;
+}
+.roles {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+}
+.roles svg {
+  margin: 15px auto;
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: beige;
+}
+#aboutParag {
+  position: relative;
+  max-width: 700px;
+  height: auto;
+  padding: 15px;
+  margin: 10px auto;
+}
+
+#commentForm {
+  width: 60vw;
+  margin: 25px auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
